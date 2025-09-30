@@ -1,0 +1,72 @@
+# Node modules
+node_modules/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+log/.*-audit.json
+log/.*.json
+log/*.log
+log/_.json
+
+certs
+helpers/cert.pem
+
+# Environnement
+.env
+config/config/config.json
+config/config/env.preprod.json
+config/config/env.prod.json
+
+# Dépôts de paquets locaux
+*.tgz
+
+# Caches
+.cache/
+dist/
+build/
+
+# Dossiers temporaires
+tmp/
+temp/
+
+# Système d'exploitation
+.DS_Store
+Thumbs.db
+
+# IDE/Éditeurs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Test Coverage
+coverage/
+
+# Fichiers générés par npm
+package-lock.json
+yarn.lock
+
+# Docker
+docker-compose.override.yml
+
+# Babel, Webpack et autres builds
+.babelrc
+.eslintcache
+.parcel-cache/
+.next/
+out/
+
+# Profiler
+*.pid
+
+# Autres fichiers spécifiques
+*.iml
+*.log
+*.pid
+*.seed
+*.gz
+*.orig
