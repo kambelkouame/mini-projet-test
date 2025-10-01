@@ -9,12 +9,12 @@ jobs:
   create-pr:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v4
+      - uses: actions/checkout@v3
+      - name: Create PR from develop to main
+        uses: repo-sync/pull-request@v2
         with:
-          branch: develop
-          base: main
-          title: "🔄 Synchronisation develop → main"
-          body: "Pull request générée automatiquement."
+          source_branch: "develop"
+          destination_branch: "main"
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          pr_title: "🔄 Synchronisation develop → main"
+          pr_body: "Pull request générée automatiquement."
